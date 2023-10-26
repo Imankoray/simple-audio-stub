@@ -1,13 +1,30 @@
-h4{
+body {
+    background-color: lavenderblush;
+   
+}
+
+h4 {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 100;
     font-size: 20px;
     user-select: none;
+    m
 }
 
-#container{
+#container {
     width: 400px;
-    height: 50px;
+    height: 400px;
+    background-color: cadetblue;
+    border-radius: 50px;
+    display: flex; 
+    align-items: center;
+    margin-top: 520px;
+    margin-left: 500px;
+    border-color: black;
+}
+#container2 {
+    width: 400px;
+    height: 400px;
     background-color: cadetblue;
     border-radius: 50px;
     display: flex;
@@ -15,31 +32,55 @@ h4{
     margin-top: 520px;
     margin-left: 500px;
     border-color: black;
-    
-  
-
+}
+#container3 {
+    width: 400px;
+    height: 400px;
+    background-color: cadetblue;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    margin-top: 520px;
+    margin-left: 500px;
+    border-color: black;
 }
 
-#play-pause-button{
+
+#slash {
+    margin-top: 300px;
+}
+
+
+#play-pause-button {
     width: 20px;
     height: 20px;
     cursor: pointer;
     padding-left: 50px;
     padding-right: 10px;
+    margin-top: 270px;
 }
 
-#seek-bar{
+#seek-bar {
     width: 115px;
     cursor: pointer;
+    margin-top: 275px;
     margin-left: 30px;
 }
 
-#current-time{
+#current-time {
     width: 65px;
     padding-left: 20px;
+    margin-top: 300px;
 }
 
-#total-time{
+#total-time {
     width: 40px;
+    margin-top: 300px;
     padding-left: 15px;
+}
+
+@media (max-width: 900px) {
+    #container {
+        flex-direction: row;
+    }
 }

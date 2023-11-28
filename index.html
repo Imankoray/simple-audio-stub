@@ -6,30 +6,47 @@
     <title>Simple audio</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/simple-player.js" defer ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Foldit:wght@300&family=Josefin+Slab&family=Oswald:wght@200;400&family=Sometype+Mono&display=swap" rel="stylesheet">
+
+    
 </head>
+
+<!-- All HTML elements that I want in the webpage here  -->
 <body>
+    <!-- Title card -->
+    <h1>Nina Simone Radio</h1>
+    <!-- container for all the elements that I want in one place -->
     <div id="container">
+        <!-- Image id- to name my image
+        src- to link the image
+    alt- alternative tag for this image 
+style- I want my cursor to be a pointer when hovering over the image -->
+        <img id=vinyl src="images/vinyl .png" alt="play-pause-button" style="cursor:pointer;">
+        <!-- Audio id for what i want to name it and the link to the audio -->
+<audio id="audio" src="audio/Y2mate.lol - Nina Simone - The Other Woman (1959).mp3"></audio>
+</div>
+<!-- New div for my other images and audios -->
+<div>
+    <img id= vinyl2 src="images/vinyl2.png" alt="play-pause-button" style="cursor: pointer;">
+    <audio id="audio2" src="audio/Y2mate.lol - Nina Simone - Do What You Gotta Do (Official Audio).mp3"></audio>
+    <img id=vinyl3 src="images/vinyl 3.png" alt="play-pause-button" style="cursor: pointer;">
+    <audio id="audio3" src="audio/Y2mate.lol - Nina Simone - Don't Let Me Be Misunderstood (Audio).mp3"></audio>
+</div>
+<!-- input- field where the user can enter data depending on the type
+type- range gives us a seekbar that will be used for the volume -->
+<input id="seek-bar2" type="range" min="0" max="100" value="0" >
+<!-- new div for 2nd container -->
+<div id="container2">
 <img id="play-pause-button" src="images/play.svg">
 <h4 id="current-time"> 00:00</h4>
 <h4 id="slash">/</h4>
 <h4 id="total-time"> 03:22</h4>
+<!-- input- field where the user can enter data depending on the type
+type- range gives us a seekbar that will be used for seeking the audio -->
 <input id="seek-bar" type="range" min="0" value="0" disabled>
 </div>
-<div id="container2">
-    <img id="play-pause-button" src="images/play.svg">
-    <h4 id="current-time"> 00:00</h4>
-    <h4 id="slash">/</h4>
-    <h4 id="total-time"> 03:22</h4>
-    <input id="seek-bar" type="range" min="0" value="0" disabled>
-    </div>
-    <div id="container3">
-        <img id="play-pause-button" src="images/play.svg">
-        <h4 id="current-time"> 00:00</h4>
-        <h4 id="slash">/</h4>
-        <h4 id="total-time"> 03:22</h4>
-        <input id="seek-bar" type="range" min="0" value="0" disabled>
-        </div>
-            
-
+<div>
 </body>
 </html>
